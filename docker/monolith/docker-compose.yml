@@ -28,6 +28,11 @@ services:
       - 8084:8084
     environment:
       MONGO_DB: mongodb://mongo:27017
+    deploy:
+      resources:
+        limits:
+          cpus: 1
+          memory: 256m
     links:
       - mongo
     networks:
