@@ -27,3 +27,9 @@ This project uses `python 3.11+`;
 ## Microservice
 - `cd ./load-test/microservice && docker run --network=microservice_microservice-network --rm -i grafana/k6 run - <k6-test-script.js`
 - `cd ./load-test/microservice && docker run --network=microservice_microservice-network --rm -i grafana/k6 run - <k6-test-script-create.js`
+
+## Experiment computer
+- Intel i5-8265U
+- 12GB RAM
+- SSD 512GB M2 3500MB/2300MB
+- Ubuntu 24.04.2 LTS
