@@ -5,7 +5,7 @@ services:
     ports:
       - 27018:27017
     volumes:
-      - ./create-schema-product.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./create-schema.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     networks:
       - monolith-network
   mongo-express:

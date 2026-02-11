@@ -22,6 +22,8 @@ This project uses `python 3.11+`;
 ### Running load test
 ## Monolith
 - `cd ./load-test/monolith && docker run --network=monolith_monolith-network --rm -i grafana/k6 run - <k6-test-script.js`
+- `cd ./load-test/monolith && docker run --network=monolith_monolith-network --rm -i grafana/k6 run - <k6-test-script-create.js`
 
 ## Microservice
-- `cd ./load-test/microservice && docker run --network=product_microservice-product-network --network=order_microservice-order-network --rm -i grafana/k6 run - <k6-test-script.js`
+- `cd ./load-test/microservice && docker run --network=microservice_microservice-network --rm -i grafana/k6 run - <k6-test-script.js`
+- `cd ./load-test/microservice && docker run --network=microservice_microservice-network --rm -i grafana/k6 run - <k6-test-script-create.js`
